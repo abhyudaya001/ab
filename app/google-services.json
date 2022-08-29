@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "335849269505",
+    "firebase_url": "https://abtube-ce68f-default-rtdb.firebaseio.com",
+    "project_id": "abtube-ce68f",
+    "storage_bucket": "abtube-ce68f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335849269505:android:f09033d02db32686825300",
+        "android_client_info": {
+          "package_name": "com.example.abtube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335849269505-l66ahjigg2v0f4kiv7fan141vul5bu17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTXd3PIn_EOjSdrVZ5wHvT591HXPM6S58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335849269505-l66ahjigg2v0f4kiv7fan141vul5bu17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

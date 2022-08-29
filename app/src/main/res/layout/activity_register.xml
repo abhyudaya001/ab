@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/average_sans"
+            android:gravity="center"
+            android:text="Create New Account"
+            android:textColor="#EC7676"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:background="@color/white">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="User Name"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#A6D6F6"
+                android:textStyle="bold"
+                app:met_baseColor="#CD4D24"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:background="@color/white">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#A6D6F6"
+                android:textStyle="bold"
+                app:met_baseColor="#CD4D24"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:background="@color/white">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#A6D6F6"
+                android:textStyle="bold"
+                app:met_baseColor="#CD4D24"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:elevation="10dp"
+            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+            android:background="@color/white">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:hint="Mobile "
+                android:inputType="textPhonetic"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="#A6D6F6"
+                android:textStyle="bold"
+                app:met_baseColor="#CD4D24"
+                app:met_floatingLabel="normal" />
+        </FrameLayout>
+
+        <RadioGroup
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_border"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Male"
+                android:textColor="#CD4D24"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:text="Female"
+                android:textColor="#CD4D24"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </RadioGroup>
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorPrimary"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/registerr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/round_bg"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
